@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!--          Agregue esta porción de código                     -->
-    <record id="module_category_cloud_base" model="ir.module.category">
-        <field name="name">Cloud Storage</field>
-        <field name="sequence">10</field>
-    </record>
-    <!--#############################################################-->
+
     <record id="module_category_cloud_base" model="ir.module.category">
         <field name="name">Cloud Storage</field>
         <field name="sequence">20</field>
