@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
+    <!--          Agregue esta porción de código                     -->
+    <record id="module_category_cloud_base" model="ir.module.category">
+        <field name="name">Cloud Storage</field>
+        <field name="sequence">10</field>
+    </record>
+    <!--#############################################################-->
     <record id="module_category_cloud_base" model="ir.module.category">
         <field name="name">Cloud Storage</field>
         <field name="sequence">20</field>
         <field name="parent_id" ref="base.module_category_productivity"/>
     </record>
-    <!-- Este Record lo agregue yo-->
-    <record id="module_category_cloud_base" model="ir.module.category">
-        <field name="name">Cloud Base</field>
-        <field name="sequence">10</field>
-    </record>
-    <!--  ####################################################3 -->
     <record id="group_cloud_base_user" model="res.groups">
         <field name="name">File manager access</field>
         <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
